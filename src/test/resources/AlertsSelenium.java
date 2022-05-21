@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
-
 public class AlertsSelenium {
 
     WebDriver driver = new ChromeDriver();
@@ -18,7 +16,6 @@ public class AlertsSelenium {
         // driver.get("http://demo.automationtesting.in/Register.html");
         driver.get("file://C:/Users/Claudio%20Soares%20Jr/Documents/Alerts.html");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS); // espera implicita
     }
 
     @Test

@@ -8,11 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class IframeSelenium {
 
-    WebDriver driver;
+    WebDriver driver = new ChromeDriver();
 
     @Before
     public void abreBrowser() {
-        driver = new ChromeDriver();
+        ChromeDriver driver = new ChromeDriver();
         driver.get("file:///C:/Users/Claudio%20Soares%20Jr/Documents/Frames.html");
     }
 
